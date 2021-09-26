@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/screens/userScreen.dart';
+//import 'package:flutter_app/Screens/my_claims.dart';
+//import 'package:flutter_app/Screens/task1.dart';
+
+import 'Screens/my_claims2.dart';
+//import 'package:flutter_app/Screens/task1_2.dart';
+//import 'package:flutter_app/screens/userScreen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,11 +17,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        backgroundColor: Colors.transparent,
+        primaryColor: Colors.white,
+        appBarTheme: AppBarTheme(elevation: 0.0),
       ),
-      home: ScreenAllPost(),
+      title: 'My Claims',
+      home: MyClaim(),
     );
   }
 }
